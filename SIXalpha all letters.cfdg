@@ -1,0 +1,715 @@
+startshape INIT
+
+shape INIT
+{
+SIXalpha_R [] 
+SIXalpha_N [x 6]
+SIXalpha_T [x 12]
+SIXalpha_E [x 18]
+SIXalpha_G [x 24]
+SIXalpha_E [x 30]
+SIXalpha_R [x 36]
+}
+
+
+
+//////**\/**SIXalpha Character Set Scirpt**\/**//////
+
+shape SIXalpha_Z
+{
+	SIXalpha_S [y 4 flip 180]
+}
+
+shape SIXalpha_Y
+{
+	SQUARE [x 1 y 4]
+	SQUARE [x 3 y 4]
+	SQUARE [x 4 y 4]
+////////ROW/////////////
+	SQUARE [x 1 y 3]
+	SQUARE [x 3 y 3]
+	SQUARE [x 4 y 3]
+////////ROW/////////////
+	rightTRI [x 1 y 2 r 90]
+	SQUARE [x 1.75 y 2 s 0.5 1]
+	rightTRI [x 2.5 y 2 r -90]
+	rightTRI [x 3 y 2 r 90]
+	SQUARE [x 4 y 2]
+////////ROW/////////////
+	rightTRI [x 2 y 1 r 90]
+	SQUARE [x 2.75 y 1 s 0.5 1]
+	rightTRI [x 3 y 1]
+	rightTRI [x 3.5 y 1 r -90]
+	SQUARE [x 4 y 1]
+////////ROW/////////////
+	rightTRI []
+	SQUARE [x 1]
+	SQUARE [x 2]
+	SQUARE [x 3]
+	rightTRI [x 4 r 180]
+}
+
+shape SIXalpha_X
+{
+	SQUARE [y 4]
+	SQUARE [x 1 y 4]
+	rightTRI [x 3 y 4]
+	SQUARE [x 4 y 4]
+////////ROW/////////////
+	rightTRI [y 3 r 90]
+	SQUARE [x 1 y 3]
+	SQUARE [x 3 y 3]
+	rightTRI [x 4 y 3 r 180]
+////////ROW/////////////
+	rightTRI [x 1 y 2 r 90]
+	rightTRI [x 2 y 2]
+	rightTRI [x 2 y 2 r -90]
+	rightTRI [x 3 y 2 r 180]
+////////ROW/////////////
+	rightTRI [x 1 y 1]
+	rightTRI [x 2 y 1 r 90]
+	rightTRI [x 2 y 1 r 180]
+	SQUARE [x 3 y 1]
+	rightTRI [x 4 y 1 r -90]
+////////ROW/////////////
+	rightTRI []
+	rightTRI [x 1 r 180]
+	rightTRI [x 3 r 90]
+	SQUARE [x 4]
+}
+
+shape SIXalpha_W
+{
+	SQUARE [y 4]
+	SQUARE [x 1 y 4]
+	rightTRI [x 3 y 4]
+	rightTRI [x 4 y 4 r -90]
+////////ROW/////////////
+	SQUARE [y 3]
+	rightTRI [x 1 y 3 r 180]
+	rightTRI [x 3 y 3 r 90]
+	SQUARE [x 4 y 3]
+////////ROW/////////////
+	SQUARE [y 2]
+	rightTRI [x 1.75 y 1.75 s 0.5]
+	rightTRI [x 2.25 y 1.75 s 0.5 r -90]
+	SQUARE [x 4 y 2]
+////////ROW/////////////
+	SQUARE [y 1]
+	rightTRI [x 1 y 1 r -90]
+	rightTRI [x 1 y 1]
+	SQUARE [x 2 y 1]
+	rightTRI [x 3 y 1 r -90]
+	SQUARE [x 3 y 0.75 s 1 0.5]
+	SQUARE [x 4 y 1]
+////////ROW/////////////
+	SQUARE []
+	SQUARE [x 1]
+	rightTRI [x 2 r 180]
+	rightTRI [x 3 r 90]
+	rightTRI [x 4 r 180]
+}
+
+shape SIXalpha_V
+{
+	SQUARE [y 4]
+	SQUARE [x 3 y 4]
+	SQUARE [x 4 y 4]
+////////ROW/////////////
+	SQUARE [y 3]
+	rightTRI [x 1 y 3 r -90]
+	rightTRI [x 3 y 3 r 90]
+	SQUARE [x 4 y 3]
+////////ROW/////////////
+	SQUARE [y 2]
+	SQUARE [x 1 y 2]
+	rightTRI [x 3 y 2]
+	rightTRI [x 4 y 2 r 180]
+////////ROW/////////////
+	rightTRI [y 1 r 90]
+	SQUARE [x 1 y 1]
+	rightTRI [x 2 y 1]
+	rightTRI [x 3 y 1 r 180]
+////////ROW/////////////
+	rightTRI [x 1 r 90]
+	rightTRI [x 2 r 180]
+}
+
+shape SIXalpha_U
+{
+	SQUARE [x 3 y 4]
+	SQUARE [x 4 y 4]
+////////ROW/////////////
+	SQUARE [y 3]
+	SQUARE [x 3 y 3]
+	SQUARE [x 4 y 3]
+////////ROW/////////////
+	SQUARE [y 2]
+	rightTRI [x 1 y 2 r -90]
+	rightTRI [x 3 y 2 r 90]
+	SQUARE [x 4 y 2]
+////////ROW/////////////
+	SQUARE [y 1]
+	SQUARE [x 1 y 1]
+	SQUARE [x 4 y 1]
+////////ROW/////////////
+	SQUARE []
+	SQUARE [x 1]
+	SQUARE [x 2]
+	SQUARE [x 3]
+	SQUARE [x 4]
+}
+
+shape SIXalpha_T
+{
+	SQUARE [y 4]
+	SQUARE [x 1 y 4]
+	SQUARE [x 2 y 4]
+	SQUARE [x 3 y 4]
+	SQUARE [x 4 y 4]
+////////ROW/////////////
+	SQUARE [y 3]
+	SQUARE [x 1 y 3]
+	SQUARE [x 2 y 3]
+////////ROW/////////////
+	SQUARE [x 2 y 2]
+	rightTRI [x 3 y 2 r -90]
+////////ROW/////////////
+	SQUARE [x 2 y 1]
+	SQUARE [x 3 y 1]
+////////ROW/////////////
+	rightTRI [x 2 r 90]
+	SQUARE [x 3]
+}
+
+shape SIXalpha_S
+{
+	SIXalpha_H [y 4 r -90]
+}
+
+shape SIXalpha_R
+{
+	SQUARE [y 4]
+	SQUARE [x 1 y 4]
+	SQUARE [x 2 y 4]
+	SQUARE [x 3 y 4]
+////////ROW/////////////
+	SQUARE [y 3]
+	SQUARE [x 1 y 2.75 s 1 0.5]
+	SQUARE [x 2 y 2.75 s 1 0.5]
+	rightTRI [x 2 y 3]
+	SQUARE [x 3 y 3]
+////////ROW/////////////
+	SQUARE [y 2]
+	SQUARE [x 1 y 1.75 s 1 0.5]
+	rightTRI [x 1 y 2]
+	rightTRI [x 2 y 2 r -90]
+	SQUARE [x 2 y 2.25 s 1 0.5]
+	SQUARE [x 2.5 y 2.25 s 1 0.5]
+	rightTRI [x 3.25 y 2.25 s 0.5 r 180]
+////////ROW/////////////
+	SQUARE [y 1]
+	rightTRI [x 1 y 1 r 90]
+	SQUARE [x 2 y 1]
+	rightTRI [x 3 y 1 r -90]
+////////ROW/////////////
+	SQUARE [x 2]
+	SQUARE [x 3]
+	rightTRI [x 4 r -90]
+}
+
+shape SIXalpha_Q
+{
+	rightTRI [y 4]
+	SQUARE [x 1 y 4]
+	SQUARE [x 2 y 4]
+	SQUARE [x 3 y 4]
+	rightTRI [x 4 y 4 r 180]
+////////ROW/////////////
+	SQUARE [y 3]
+	SQUARE [x 0.75 y 3 s 0.5 1]
+	rightTRI [x 1 y 3 r -90]
+	SQUARE [x 1.75 y 3 s 0.5 1]
+	SQUARE [x 3 y 3]
+////////ROW/////////////
+	SQUARE [y 2]
+	SQUARE [x 1 y 2]
+	SQUARE [x 1.75 y 2 s 0.5 1]
+	rightTRI [x 2 y 2 r -90]
+	SQUARE [x 3 y 2]
+////////ROW/////////////
+	rightTRI [y 1 r 90]
+	SQUARE [x 1 y 1]
+	SQUARE [x 2 y 1]
+	SQUARE [x 3 y 1]
+////////ROW/////////////
+	rightTRI [x 2 r 90]
+	SQUARE [x 3]
+	rightTRI [x 4 r -90]
+}
+
+shape SIXalpha_P
+{
+	SQUARE [y 4]
+	SQUARE [x 1 y 4]
+	SQUARE [x 2 y 4]
+	SQUARE [x 3 y 4]
+	SQUARE [x 4 y 4]
+////////ROW/////////////
+	SQUARE [y 3]
+	SQUARE [x 1 y 3]
+	SQUARE [x 1.75 y 3 s 0.5 1]
+	rightTRI [x 2 y 3 r -90]
+	SQUARE [x 2.75 y 3 s 0.5 1]
+	SQUARE [x 4 y 3]
+////////ROW/////////////
+	SQUARE [y 2]
+	SQUARE [x 1 y 2]
+	SQUARE [x 2 y 2]
+	SQUARE [x 2.75 y 2 s 0.5 1]
+	rightTRI [x 3 y 2 r -90]
+	SQUARE [x 4 y 2]
+////////ROW/////////////
+	SQUARE [y 1]
+	SQUARE [x 0.75 y 1 s 0.5 1]
+	SQUARE [x 4 y 1]
+	rightTRI [x 1 y 1 r -90]
+	rightTRI [x 1.5 y 1 r 90]
+	SQUARE [x 2.25 y 1 s 0.5 1]
+	SQUARE [x 3 y 1]
+////////ROW/////////////
+	SQUARE []
+	SQUARE [x 1]
+}
+
+shape SIXalpha_O
+{
+	rightTRI [y 4]
+	SQUARE [x 1 y 4]
+	SQUARE [x 2 y 4]
+	SQUARE [x 3 y 4]
+	SQUARE [x 4 y 4]
+////////ROW/////////////
+	SQUARE [y 3]
+	SQUARE [x 1.25 y 3 s 0.5 1]
+	rightTRI [x 2 y 3]
+	SQUARE [x 2.25 y 3 s 0.5 1]
+	SQUARE [x 3 y 3]
+	SQUARE [x 4 y 3]
+////////ROW/////////////
+	SQUARE [y 2]
+	rightTRI [x 1 y 2]
+	SQUARE [x 1.25 y 2 s 0.5 1]
+	SQUARE [x 2 y 2]
+	SQUARE [x 3 y 2]
+	SQUARE [x 4 y 2]
+////////ROW/////////////
+	SQUARE [y 1]
+	SQUARE [x 1 y 1]
+	SQUARE [x 2 y 1]
+	SQUARE [x 3 y 1]
+	SQUARE [x 4 y 1]
+////////ROW/////////////
+	SQUARE []
+	SQUARE [x 1]
+	SQUARE [x 2]
+	SQUARE [x 3]
+	rightTRI [x 4 r 180]
+}
+
+shape SIXalpha_N
+{
+	SQUARE [x 3 y 4]
+	SQUARE [x 3.75 y 4 s 0.5 1]
+	rightTRI [x 4 y 4 r 180]
+////////ROW/////////////
+	SQUARE [y 3]
+	SQUARE [x 1 y 3]
+	rightTRI [x 2 y 3 r -90]
+	rightTRI [x 3 y 3 r 90]
+	SQUARE [x 3.75 y 3 s 0.5 1]
+////////ROW/////////////
+	SQUARE [y 2]
+	rightTRI [x 1 y 2 r 90]
+	SQUARE [x 2 y 2]
+	rightTRI [x 3 y 2 r -90]
+	SQUARE [x 3.75 y 2 s 0.5 1]
+////////ROW/////////////
+	SQUARE [y 1]
+	rightTRI [x 1 y 1 r -90]
+	rightTRI [x 2 y 1 r 90]
+	SQUARE [x 3 y 1]
+	SQUARE [x 3.75 y 1 s 0.5 1]
+	rightTRI [x 4 y 1 r -90]
+////////ROW/////////////
+	SQUARE []
+	SQUARE [x 1]
+}
+
+shape SIXalpha_M
+{
+	SQUARE [y 4]
+	rightTRI [x 1 y 4 r -90]
+	rightTRI [x 2 y 4 r 90]
+	SQUARE [x 3 y 4]
+	rightTRI [x 4 y 4 r -90]
+////////ROW/////////////
+	SQUARE [y 3]
+	SQUARE [x 1 y 3]
+	SQUARE [x 2 y 3]
+	SQUARE [x 3 y 3]
+	SQUARE [x 4 y 3]
+////////ROW/////////////
+	SQUARE [y 2]
+	rightTRI [x 1 y 2 r 90]
+	SQUARE [x 2 y 2]
+	rightTRI [x 3 y 2 r 180]
+	SQUARE [x 4 y 2]
+////////ROW/////////////
+	SQUARE [y 1]
+	rightTRI [x 1 y 1 r -90]
+	rightTRI [x 3 y 1]
+	SQUARE [x 4 y 1]
+////////ROW/////////////
+	SQUARE []
+	SQUARE [x 1]
+	SQUARE [x 3]
+	SQUARE [x 4]
+}
+
+shape SIXalpha_L
+{
+	SQUARE [y 4]
+	SQUARE [x 0.75 y 4 s 0.5 1]
+////////ROW/////////////
+	SQUARE [y 3]
+	rightTRI [x 0.5 y 3 r 180]
+////////ROW/////////////
+	SQUARE [y 2]
+	rightTRI [x 2 y 2]
+	SQUARE [x 3 y 2]
+	SQUARE [x 4 y 2]
+////////ROW/////////////
+	SQUARE [y 1]
+	SQUARE [x 1 y 1]
+	SQUARE [x 2 y 1]
+	SQUARE [x 3 y 1]
+	SQUARE [x 4 y 1]
+////////ROW/////////////
+	rightTRI [r 90]
+	SQUARE [x 1]
+	SQUARE [x 2]
+	SQUARE [x 3]
+	SQUARE [x 4]
+}
+
+shape SIXalpha_K
+{
+	SQUARE [x 2 y 4]
+	SQUARE [x 3 y 4]
+	rightTRI [x 4 y 4 r 180]
+////////ROW/////////////
+	SQUARE [y 3]
+	rightTRI [x 1 y 3]
+	SQUARE [x 2 y 3]
+	rightTRI [x 3 y 3 r 180]
+////////ROW/////////////
+	SQUARE [y 2]
+	SQUARE [x 1 y 2]
+	rightTRI [x 2 y 2 r 180]
+	rightTRI [x 2 y 2 r -90]
+////////ROW/////////////
+	SQUARE [y 1]
+	rightTRI [x 1 y 1 r 90]
+	SQUARE [x 2 y 1]
+	rightTRI [x 3 y 1 r -90]
+////////ROW/////////////
+	SQUARE []
+	SQUARE [x 2]
+	SQUARE [x 3]
+	rightTRI [x 4 r -90]
+}
+
+shape SIXalpha_J
+{
+	rightTRI [x 1 y 4 r 90]
+	SQUARE [x 2 y 4]
+	SQUARE [x 3 y 4]
+	SQUARE [x 3.75 y 4 s 0.5 1]
+	rightTRI [x 4 y 4 r 180]
+////////ROW/////////////
+	rightTRI [x 3 y 3 r 90]
+	SQUARE [x 3.5 y 3]
+////////ROW/////////////
+	rightTRI [y 2 r -90]
+	SQUARE [x 3.5 y 2]
+////////ROW/////////////
+	SQUARE [y 1]
+	rightTRI [x 1 y 1 r -90]
+	SQUARE [x 1 y 0.75 s 1 0.5]
+	SQUARE [x 2 y 0.75 s 1 0.5]
+	SQUARE [x 3 y 0.75 s 1 0.5]
+	rightTRI [x 3 y 1.5]
+	SQUARE [x 3.5 y 1]
+	rightTRI [x 4 y 1 r -90]
+////////ROW/////////////
+	SQUARE []
+	SQUARE [x 1]
+	SQUARE [x 2]
+	SQUARE [x 3]
+	rightTRI [x 4 r 180]
+}
+
+shape SIXalpha_I
+{
+	SQUARE [y 4]
+	SQUARE [x 1 y 4]
+	SQUARE [x 2 y 4]
+	SQUARE [x 3 y 4]
+////////ROW/////////////
+	SQUARE [x 1 y 3]
+////////ROW/////////////
+	SQUARE [x 1 y 2]
+	rightTRI [x 2 y 2 r -90]
+////////ROW/////////////
+	SQUARE [x 1 y 1]
+	SQUARE [x 2 y 1]
+////////ROW/////////////
+	SQUARE []
+	SQUARE [x 1]
+	SQUARE [x 2]
+	SQUARE [x 3]
+	SQUARE [x 4]
+}
+
+shape SIXalpha_H
+{
+	SQUARE [y 4]
+	SQUARE [x 1 y 4]
+////////ROW/////////////
+	SQUARE [y 3]
+	rightTRI [x 1 y 3 r 180]
+	rightTRI [x 2 y 3]
+	SQUARE [x 3 y 3]
+	SQUARE [x 4 y 3]
+////////ROW/////////////
+	SQUARE [y 2]
+	rightTRI [x 1 y 2]
+	SQUARE [x 2 y 2]
+	rightTRI [x 3 y 2 r 180]
+	SQUARE [x 3.25 y 2 s 0.5 1]
+	SQUARE [x 4 y 2]
+////////ROW/////////////
+	SQUARE [y 1]
+	SQUARE [x 1 y 1]
+	rightTRI [x 2 y 1 r 180]
+	rightTRI [x 3 y 1]
+	SQUARE [x 3.25 y 1 s 0.5 1]
+	SQUARE [x 4 y 1]
+////////ROW/////////////
+	SQUARE []
+	SQUARE [x 1]
+	SQUARE [x 3]
+	SQUARE [x 4]
+}
+
+shape SIXalpha_G
+{
+	SIXalpha_C []
+	rightTRI [x 2 y 1]
+	SQUARE [x 3 y 1]
+	SQUARE [x 4 y 1]
+}
+
+shape SIXalpha_F
+{
+	SQUARE [x 1 y 4]
+	SQUARE [x 2 y 4]
+	rightTRI [x 3 y 4 r -90]
+////////ROW/////////////
+	SQUARE [x 1 y 3]
+	rightTRI [x 2 y 3 r 90]
+	SQUARE [x 3 y 3]
+	rightTRI [x 4 y 3 r -90]
+////////ROW/////////////
+	rightTRI [y 2]
+	SQUARE [x 1 y 2]
+////////ROW/////////////
+	SQUARE [y 1]
+	SQUARE [x 1 y 1]
+	SQUARE [x 2 y 1]
+	rightTRI [x 3 y 1 r -90]
+////////ROW/////////////
+	SQUARE []
+	SQUARE [x 1]
+	rightTRI [x 2 r 180]
+}
+
+shape SIXalpha_E
+{
+	rightTRI [y 4]
+	SQUARE [x 1 y 4]
+	SQUARE [x 2 y 4]
+	SQUARE [x 3 y 4]
+////////ROW/////////////
+	SQUARE [y 3]
+	SQUARE [x 1.25 y 3 size 0.5 1]
+	rightTRI [x 2 y 3]
+	SQUARE [x 2.25 y 3 size 0.5 1]
+	SQUARE [x 3 y 3]
+////////ROW/////////////
+	SQUARE [y 2]
+	rightTRI [x 1 y 2]
+	SQUARE [x 1.25 y 2 size 0.5 1]
+	SQUARE [x 2 y 2]
+	rightTRI [x 3 y 2 r 180]
+////////ROW/////////////
+	SQUARE [y 1]
+	SQUARE [x 1 y 1]
+	SQUARE [x 2 y 1]
+	rightTRI [x 4 y 1]
+////////ROW/////////////
+	rightTRI [r 90]
+	SQUARE [x 1]
+	SQUARE [x 2]
+	SQUARE [x 3]
+	SQUARE [x 4]
+}
+
+shape SIXalpha_D
+{
+	SIXalpha_B [x 4 flip 90]
+}
+
+shape SIXalpha_C
+{
+	rightTRI [x 1.5 y 4]
+	SQUARE [x 2.25 y 4 s 0.5 1]
+	SQUARE [x 3 y 4]
+	SQUARE [x 4 y 4]
+////////ROW/////////////
+	SQUARE [y 2.75 s 1 0.5]
+	rightTRI [x 0.5 y 3]
+	SQUARE [x 1.25 y 3 s 0.5 1]
+	SQUARE [x 2 y 3]
+	SQUARE [x 3 y 3]
+	SQUARE [x 4 y 3]
+////////ROW/////////////
+	SQUARE [y 2]
+	SQUARE [x 0.75 y 2 s 0.5 1]
+	rightTRI [x 1.5 y 2 r 180]
+////////ROW/////////////
+	SQUARE [y 1]
+	SQUARE [x  0.75 y 1 s 0.5 1]
+////////ROW/////////////
+	SQUARE []
+	SQUARE [x 1]
+	SQUARE [x 2]
+	SQUARE [x 3]
+	SQUARE [x 4]
+}
+
+shape SIXalpha_B
+{
+	SQUARE [x 1 y 4]
+	SQUARE [x 2 y 4]
+////////ROW/////////////
+	SQUARE [x 1 y 3]
+	SQUARE [x 2 y 3]
+////////ROW/////////////
+	SQUARE [x 1 y 2]
+	rightTRI [x 2 y 2 r 90]
+	SQUARE [x 2.25 y 2 s 0.5 1]
+	rightTRI [x 3 y 2 r -90]
+////////ROW/////////////
+	SQUARE [x 1 y 1]
+	SQUARE [x 2.25 y 1 s 0.5 1]
+	rightTRI [x 3 y 1 r 90]
+	SQUARE [x 3.25 y 1 s 0.5 1]
+	rightTRI [x 4 y 1 r -90]
+////////ROW/////////////
+	rightTRI []
+	SQUARE [x 1]
+	SQUARE [x 2]
+	SQUARE [x 3]
+	SQUARE [x 4]
+}
+
+shape SIXalpha_A
+{
+	SQUARE [y 4]
+	SQUARE [x 1 y 4]
+	SQUARE [x 2 y 4]
+	rightTRI [x 3 y 4 r -90]
+////////ROW/////////////
+	rightTRI [y 3 r 90]
+	SQUARE [x 1 y 3]
+	SQUARE [x 2 y 3]
+	SQUARE [x 3 y 3]
+	rightTRI [x 4 y 3 r -90]
+////////ROW/////////////
+	SQUARE [y 1.75 s 1 0.5]
+	SQUARE [x 1 y 1.75 s 1 0.5]
+	SQUARE [x 2 y 1.75 s 1 0.5]
+	rightTRI [x 2 y 2 r 90]
+	SQUARE [x 3 y 2]
+	SQUARE [x 4 y 2]
+////////ROW/////////////
+	SQUARE [y 1]
+	SQUARE [x 1 y 0.75 s 1 0.5]
+	SQUARE [x 2 y 0.75 s 1 0.5]
+	rightTRI [x 1 y 1 r -90]
+	SQUARE [x 3 y 1]
+	SQUARE [x 4 y 1]
+////////ROW/////////////
+	rightTRI [r 90]
+	SQUARE [x 1]
+	rightTRI [x 2 r -90]
+	SQUARE [x 2 y -0.25 s 1 0.5]
+	SQUARE [x 3]
+	SQUARE [x 4]
+}
+
+//////**/\**SIXalpha Character Set Scirpt**/\**//////
+
+//////**\/**centered 45/45/90 unit triangle**\/**//////
+
+shape rightTRI
+{
+	TRIANGLE [x 0.16775 -0.16915 skew 30 0 s 1 (1/(sqrt(3/4)))]
+}
+
+//////**/\**centered 45/45/90 unit triangle**/\**//////
+
+//////**\/**5x5 alpha grid framework**\/**//////
+
+shape SIXalpha_framework
+{
+	SQUARE []
+	SQUARE [x 1]
+	SQUARE [x 2]
+	SQUARE [x 3]
+	SQUARE [x 4]
+	SQUARE [y 1]
+	SQUARE [y 2]
+	SQUARE [y 3]
+	SQUARE [y 4]
+	SQUARE [x 1 y 1]
+	SQUARE [x 1 y 2]
+	SQUARE [x 1 y 3]
+	SQUARE [x 1 y 4]
+	SQUARE [x 2 y 1]
+	SQUARE [x 2 y 2]
+	SQUARE [x 2 y 3]
+	SQUARE [x 2 y 4]
+	SQUARE [x 3 y 1]
+	SQUARE [x 3 y 2]
+	SQUARE [x 3 y 3]
+	SQUARE [x 3 y 4]
+	SQUARE [x 4 y 1]
+	SQUARE [x 4 y 2]
+	SQUARE [x 4 y 3]
+	SQUARE [x 4 y 4]
+}
+
+//////**/\**5x5 alpha grid framework**/\**//////

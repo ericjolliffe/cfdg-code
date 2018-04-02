@@ -1,0 +1,25 @@
+startshape does
+
+shape does
+{
+flower 
+does [[r 10 s 0.8 x 1.3 y 1.3]]
+}
+ 
+shape flower {
+    // petals
+    CIRCLE [[ r  30 x 0.5 s 1 0.5]]
+    CIRCLE [[ r  30 x 1 s 1 0.7  b 1]]
+    CIRCLE [[ r  90 x 0.5 s 1 0.5]]
+    CIRCLE [[ r 90 x 1 s 1 0.7  b 1]]
+    CIRCLE [[ r 150 x 0.5 s 1 0.5 ]]
+    CIRCLE [[ r 150 x 1 s 1 0.7 b 1]]
+    CIRCLE [[ r 210 x 0.5 s 1 0.5 ]]
+    CIRCLE [[ r 210 x 1 s 1 0.7 b 1 ]]
+    CIRCLE [[ r 270 x 0.5 s 1 0.5 ]]
+    CIRCLE [[ r 270 x 1 s 1 0.7  b 1]]
+    CIRCLE [[ r 330 x 0.5 s 1 0.5 ]]
+    CIRCLE [[ r 330 x 1 s 1 0.7 b 1]]
+    //center
+    CIRCLE [ s 1 b 1 ]
+}

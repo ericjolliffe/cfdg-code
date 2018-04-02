@@ -1,0 +1,124 @@
+startshape MIRROR
+CF::Background = [ b -1 ]
+
+//Spiral scrpted by Athen Ananda
+shape MIRROR
+{
+BULB[]
+BULB[s -1 1]
+BULB[s 1 -1]
+BULB[s -1 -1]
+AKSPIRAL[ y -5 s 3 ]
+}
+
+shape AKSPIRAL
+rule 3{
+ak[sat 0 b 1]
+AKSPIRAL[r 10 s 0.9 y 1]
+}
+
+rule 0.2{
+ak[sat 0 b 1]
+AKSPIRAL[r 10 s 0.9 y 1]
+AKSPIRAL[r 90 s -1 1 y 10]
+}
+
+shape BULB
+rule {
+WHEEL [ s .5 x .1]
+WHEEL [ s .99 x 6]
+BULB [hue +.5 x .1 r 5 s .9 ]
+}
+
+rule .5 {
+WHEEL [ s .5 x .1]
+WHEEL [ s .99 x 6]
+BULB [hue +.5 x .1 r 6 s .9 ]
+}
+
+
+
+shape WHEEL
+rule {
+
+CIRCLE [sat 1 hue 240 s .9 b 1]
+WHEEL[x 2 s .6]
+WHEEL[y 1 s .2]
+} 
+
+rule 0.01 {
+
+ak [sat 0  s 3.5 b 1]
+WHEEL[x 2 s .6]
+WHEEL[y 1 s .5]
+} 
+
+
+rule .3{
+CIRCLE [sat .5 hue 230 s .1]
+CIRCLE [sat 1 hue 220 s .9 b 1]
+WHEEL[x 2 s 1.2]
+WHEEL[y .6 s .7]
+} 
+
+
+
+//Ak image scripted by Eric Jolliffe
+shape ak
+{
+	TRIANGLE [x 3.1 y 0.135 size 0.3 0.1 skew 30 0 rotate 180]
+	TRIANGLE [x 4.24 y 0.45 size 0.1]
+	TRIANGLE [x 4.67 y 0.286 size 0.25 skew 30 0 rotate -90]
+	SQUARE [x 3.05 y 0.32 size 2.4 0.36]
+	SQUARE [x 2.5 y 0.13 size 1 0.1]
+	SQUARE [x 4.7 y 0.24 size 1 0.08]
+	SQUARE [x 4.6 y 0.17 size 1 0.02]
+	SQUARE [x 4.1 y 0.4 size 1 0.1]
+	SQUARE [x 1.86 y -0.2 size 0.25 0.75 rotate -26]
+	SQUARE [x 4.265 y 0.241 size 0.12]
+	SQUARE [x 5.04 y 0.241 size 0.12]
+	SQUARE [x 4.25 y 0.265 size 0.05 0.25]
+	SQUARE [x 4.575 y 0.3 size 0.05 0.15]
+	SQUARE [x 3.9 y 0.51 size 0.5 0.02]
+	SQUARE [x 3.3 y 0.52 size 0.3 0.02]
+	SQUARE [x 3.14 y 0.46 size 0.03 0.2]
+	SQUARE [x 3.45 y 0.43 size 0.03 0.2]
+	SQUARE [x 2.27 y -0.123 size 0.18 0.02]
+	clip [x 3.5 rotate 90 size 0.25]
+	clip [x 1.75 rotate -70 size 0.05]
+	stock [x 0.553 size 0.7 1]
+	sight [x 5.075 y 0.35 size 0.3]
+	trigger [x 2.33 y -0.07 size 0.05 rotate 12]
+	trigguard [x 2.36 y -0.02 size 0.02 flip 180]
+	trigguard [x 2.18 y -0.02 size 0.02 flip 180 rotate -90]
+
+}
+
+shape clip
+	{loop 5 [rotate 14] SQUARE [y 3.5 size 1 1.4]}
+
+shape stock
+{
+	TRIANGLE [flip 180 rotate 3 size 2 1 skew 30 0]
+	TRIANGLE [x 0.665 y -0.05 size 0.3 2 rotate 112]
+	TRIANGLE [x 1.81 y 0.36 size 0.25 rotate -15]
+	CIRCLE [x 1.3 y 0.19 size (1/3)]
+	SQUARE [x -0.58 y -0.558 rotate 3 size 0.1]
+	SQUARE [x 0.87 y -0.125 size 0.1 3 rotate -73]
+	SQUARE [x 1.6 y 0.23 size 0.5 0.2 rotate 11]
+
+}
+
+shape sight
+{
+	TRIANGLE [size 0.6 1 skew 30 0]
+	SQUARE [x 0.052 y 0.38 size 0.3 0.4]
+	SQUARE [b 1 y -0.08 size 0.25 0.1]
+
+}
+
+shape trigger
+	{loop 10 [rotate 7 size 0.8] SQUARE [y 3 x -1.7]}
+
+shape trigguard
+	{loop 10 [rotate 10] SQUARE [x 5]}
